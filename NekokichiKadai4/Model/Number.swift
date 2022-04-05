@@ -7,12 +7,14 @@
 
 import UIKit
 
+// 必要な変数や関数をプロトコルで用意
 protocol CountUp {
     var num: Int { get set }
     mutating func increment()
     mutating func reset()
 }
 
+// 数字をカウントアップするので、型名をcountedUpNumber
 struct CountedUpNumber: CountUp {
     var num: Int = 0
 

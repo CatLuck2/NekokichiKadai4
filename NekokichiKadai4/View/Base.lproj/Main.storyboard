@@ -17,10 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cro-IB-1yQ">
-                                <rect key="frame" x="20" y="131" width="58" height="31"/>
+                                <rect key="frame" x="20" y="131" width="89" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="2w0-D4-yUe"/>
-                                    <constraint firstAttribute="width" secondItem="Cro-IB-1yQ" secondAttribute="height" multiplier="58:31" id="Efs-bD-xhL"/>
+                                    <constraint firstAttribute="width" secondItem="Cro-IB-1yQ" secondAttribute="height" multiplier="89:31" id="hlA-TQ-trX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Clear"/>
@@ -28,21 +27,19 @@
                                     <action selector="clearIncrementedNumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQm-ci-hDP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahM-K9-VxK">
-                                <rect key="frame" x="20" y="44" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahM-K9-VxK">
+                                <rect key="frame" x="20" y="44" width="89" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ahM-K9-VxK" secondAttribute="height" multiplier="2:1" id="J6o-vS-St1"/>
-                                    <constraint firstAttribute="height" constant="21" id="jek-Ap-zNb"/>
+                                    <constraint firstAttribute="width" secondItem="ahM-K9-VxK" secondAttribute="height" multiplier="89:21" id="f74-b1-U8I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-S9-zvQ">
-                                <rect key="frame" x="20" y="83" width="40" height="31"/>
+                                <rect key="frame" x="20" y="84" width="89" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TDF-S9-zvQ" secondAttribute="height" multiplier="40:31" id="cEG-P3-EgY"/>
-                                    <constraint firstAttribute="height" constant="31" id="fPP-pF-YQ4"/>
+                                    <constraint firstAttribute="width" secondItem="TDF-S9-zvQ" secondAttribute="height" multiplier="89:31" id="Ud6-TT-W6O"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+1"/>
@@ -54,15 +51,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cro-IB-1yQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3C5-ke-iZi"/>
-                            <constraint firstItem="TDF-S9-zvQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I0p-fl-tt0"/>
-                            <constraint firstItem="ahM-K9-VxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S0f-zu-0kw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cro-IB-1yQ" secondAttribute="trailing" symbolic="YES" id="XzO-5z-PXa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TDF-S9-zvQ" secondAttribute="trailing" symbolic="YES" id="ew1-pg-pJ1"/>
-                            <constraint firstItem="ahM-K9-VxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jmq-yW-2C1"/>
-                            <constraint firstItem="Cro-IB-1yQ" firstAttribute="top" secondItem="TDF-S9-zvQ" secondAttribute="bottom" constant="17" id="sct-bu-gJH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ahM-K9-VxK" secondAttribute="trailing" symbolic="YES" id="t3e-fF-f7Q"/>
-                            <constraint firstItem="TDF-S9-zvQ" firstAttribute="top" secondItem="ahM-K9-VxK" secondAttribute="bottom" constant="18" id="wqc-sV-XCE"/>
+                            <constraint firstItem="ahM-K9-VxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Qd-as-V9I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cro-IB-1yQ" secondAttribute="trailing" constant="305" id="2zG-SF-3r4"/>
+                            <constraint firstItem="TDF-S9-zvQ" firstAttribute="top" secondItem="ahM-K9-VxK" secondAttribute="bottom" constant="19" id="7Ol-BN-ZLS"/>
+                            <constraint firstItem="ahM-K9-VxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E0S-Jj-iwL"/>
+                            <constraint firstItem="TDF-S9-zvQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iqx-fr-gKg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahM-K9-VxK" secondAttribute="trailing" constant="305" id="R2c-Ig-HLq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TDF-S9-zvQ" secondAttribute="trailing" constant="305" id="b9u-kp-nbN"/>
+                            <constraint firstItem="Cro-IB-1yQ" firstAttribute="top" secondItem="TDF-S9-zvQ" secondAttribute="bottom" constant="16" id="lWW-59-VBs"/>
+                            <constraint firstItem="Cro-IB-1yQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ws7-Xa-Hk1"/>
                         </constraints>
                     </view>
                     <connections>

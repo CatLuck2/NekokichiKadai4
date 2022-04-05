@@ -17,6 +17,10 @@ final class ViewController: UIViewController {
         setNumInIncrementedNumLabel(countedUpNumber.num)
     }
 
+    /*
+     ・Labelの値を3度（初期表示、カウントアップ、初期化）変更するので、
+     代入処理を関数で実装
+     */
     private func setNumInIncrementedNumLabel(_ value: Int) {
         incrementedNumLabel.text = "\(value)"
     }
