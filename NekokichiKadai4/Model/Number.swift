@@ -13,7 +13,7 @@ protocol CountUp {
     mutating func reset()
 }
 
-struct Number: CountUp {
+struct CountedUpNumber: CountUp {
     var num: Int = 0
 
     mutating func increment() {

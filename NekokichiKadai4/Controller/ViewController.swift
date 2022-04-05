@@ -10,21 +10,25 @@ import UIKit
 final class ViewController: UIViewController {
 
     @IBOutlet weak private var incrementedNumLabel: UILabel!
-    private var number: CountUp = Number()
+    private var countedUpNumber: CountUp = CountedUpNumber()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        incrementedNumLabel.text = "\(number.num)"
+        setNumInIncrementedNumLabel(countedUpNumber.num)
+    }
+
+    private func setNumInIncrementedNumLabel(_ value: Int) {
+        incrementedNumLabel.text = "\(value)"
     }
 
     @IBAction func incrementNumButton(_ sender: UIButton) {
-        number.increment()
-        incrementedNumLabel.text = "\(number.num)"
+        countedUpNumber.increment()
+        setNumInIncrementedNumLabel(countedUpNumber.num)
     }
 
     @IBAction func clearIncrementedNumButton(_ sender: UIButton) {
-        number.reset()
-        incrementedNumLabel.text = "\(number.num)"
+        countedUpNumber.reset()
+        setNumInIncrementedNumLabel(countedUpNumber.num)
     }
 
 }
