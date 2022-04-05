@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak private var incrementedNumLabel: UILabel!
+    
+    @IBAction func incrementNumButton(_ sender: UIButton) {
+        
     }
-
-
+    
+    @IBAction func clearIncrementedNumButton(_ sender: UIButton) {
+    }
+    
 }
 
