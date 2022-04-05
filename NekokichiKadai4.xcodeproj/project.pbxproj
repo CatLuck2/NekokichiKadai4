@@ -58,13 +58,37 @@
 			children = (
 				A263F32C27FC035D00E22F6F /* AppDelegate.swift */,
 				A263F32E27FC035D00E22F6F /* SceneDelegate.swift */,
-				A263F33027FC035D00E22F6F /* ViewController.swift */,
-				A263F33227FC035D00E22F6F /* Main.storyboard */,
+				A263F34127FC08D200E22F6F /* Model */,
+				A263F34227FC08D800E22F6F /* View */,
+				A263F34327FC08DA00E22F6F /* Controller */,
 				A263F33527FC035F00E22F6F /* Assets.xcassets */,
 				A263F33727FC035F00E22F6F /* LaunchScreen.storyboard */,
 				A263F33A27FC035F00E22F6F /* Info.plist */,
 			);
 			path = NekokichiKadai4;
+			sourceTree = "<group>";
+		};
+		A263F34127FC08D200E22F6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A263F34227FC08D800E22F6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A263F33227FC035D00E22F6F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A263F34327FC08DA00E22F6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A263F33027FC035D00E22F6F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
