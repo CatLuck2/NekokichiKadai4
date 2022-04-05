@@ -10,11 +10,12 @@ import UIKit
 final class ViewController: UIViewController {
 
     @IBOutlet weak private var incrementedNumLabel: UILabel!
-    private var countedUpNumber: CountUp = CountedUpNumber()
+    // Modelであることを示すために、末尾にModelを付与
+    private var countedUpNumberModel: CountUp = CountedUpNumber()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNumToIncrementedNumLabel(countedUpNumber.num)
+        setNumToIncrementedNumLabel(countedUpNumberModel.num)
     }
 
     /*
@@ -26,13 +27,13 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func incrementNumButton(_ sender: UIButton) {
-        countedUpNumber.increment()
-        setNumToIncrementedNumLabel(countedUpNumber.num)
+        countedUpNumberModel.increment()
+        setNumToIncrementedNumLabel(countedUpNumberModel.num)
     }
 
     @IBAction func clearIncrementedNumButton(_ sender: UIButton) {
-        countedUpNumber.reset()
-        setNumToIncrementedNumLabel(countedUpNumber.num)
+        countedUpNumberModel.reset()
+        setNumToIncrementedNumLabel(countedUpNumberModel.num)
     }
 
 }
