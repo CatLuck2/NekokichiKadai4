@@ -11,29 +11,29 @@ final class ViewController: UIViewController {
 
     @IBOutlet weak private var incrementedNumLabel: UILabel!
     // Modelであることを示すために、末尾にModelを付与
-    private var countedUpNumberModel: CountUp = CountedUpNumber()
+    private var numberCounter: NumberCounterProtocol = NumberCounter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNumToIncrementedNumLabel(countedUpNumberModel.num)
+        updateIncrementedNumLabel()
     }
 
     /*
      ・Labelの値を3度（初期表示、カウントアップ、初期化）変更するので、
         代入処理を関数で実装
      */
-    private func setNumToIncrementedNumLabel(_ value: Int) {
-        incrementedNumLabel.text = "\(value)"
+    private func updateIncrementedNumLabel() {
+        incrementedNumLabel.text = "\(numberCounter.num)"
     }
 
     @IBAction func incrementNumButton(_ sender: UIButton) {
-        countedUpNumberModel.increment()
-        setNumToIncrementedNumLabel(countedUpNumberModel.num)
+        numberCounter.increment()
+        updateIncrementedNumLabel()
     }
 
     @IBAction func clearIncrementedNumButton(_ sender: UIButton) {
-        countedUpNumberModel.reset()
-        setNumToIncrementedNumLabel(countedUpNumberModel.num)
+        numberCounter.reset()
+        updateIncrementedNumLabel()
     }
 
 }
