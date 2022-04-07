@@ -8,21 +8,21 @@
 import UIKit
 
 // 必要な変数や関数をプロトコルで用意
-protocol CountUp {
-    var num: Int { get set }
-    mutating func increment()
-    mutating func reset()
+protocol NumberCounterProtocol {
+    var num: Int { get }
+    func increment()
+    func reset()
 }
 
 // 数字をカウントアップするので、型名をcountedUpNumber
-struct CountedUpNumber: CountUp {
-    var num: Int = 0
+class NumberCounter: NumberCounterProtocol {
+    private(set) var num: Int = 0
 
-    mutating func increment() {
+    func increment() {
         num += 1
     }
 
-    mutating func reset() {
+    func reset() {
         num = 0
     }
 }
